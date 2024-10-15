@@ -1,36 +1,37 @@
-/* ./Components/Navbar/Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #000000;
     padding: 15px 30px;
   }
   
   .navbar-logo a {
-    color: white;
+    color: #FFD700; 
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
   }
   
   .navbar-links a {
-    color: white;
+    color: #FFD700;
     text-decoration: none;
     margin-left: 20px;
     padding: 10px 20px;
     border-radius: 4px;
+    transition: background-color 0.3s; 
   }
   
   .btn-login {
-    background-color: #007bff;
+    background-color: #333333; /* Dark gray for login button */
   }
   
   .btn-signup {
-    background-color: #28a745;
+    background-color: #333333; /* Dark yellow for signup button */
   }
   
   .navbar-links a:hover {
-    opacity: 0.8;
+    background-color: #FFD700; /* Dark yellow on hover */
+    color: black; /* Black text on hover */
   }
   
