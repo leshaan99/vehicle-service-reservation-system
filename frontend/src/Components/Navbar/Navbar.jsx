@@ -1,17 +1,20 @@
 import React from 'react';
 import './Navbar.css'; 
-import Home from '../Home/Home';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">FixMyRide</a> {Home}
+        <Link to="/">FixMyRide</Link>
       </div>
-      <div className="navbar-links">
-        <a href="/login" className="btn-login">Login</a>
-        <a href="/signup" className="btn-signup">Sign Up</a>
-      </div>
+      {location.pathname !== '/login' && location.pathname !== '/signup' && (
+        <div className="navbar-links">
+          <Link to="/signup" className="btn-signup">Sign Up</Link>
+        </div>
+      )}
     </nav>
   );
 };

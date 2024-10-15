@@ -1,37 +1,52 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    padding: 15px 30px;
-  }
-  
-  .navbar-logo a {
-    color: #FFD700; 
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar-links a {
-    color: #FFD700;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s; 
-  }
-  
-  .btn-login {
-    background-color: #333333; /* Dark gray for login button */
-  }
-  
-  .btn-signup {
-    background-color: #333333; /* Dark yellow for signup button */
-  }
-  
-  .navbar-links a:hover {
-    background-color: #FFD700; /* Dark yellow on hover */
-    color: black; /* Black text on hover */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; 
+  padding: 30px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-logo a {
+  color: #FFD700; 
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+
+.navbar-logo a:hover {
+  color: #fff; 
+}
+
+.navbar-links a {
+  color: #FFD700;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem; 
+  font-weight: bold; 
+  transition: all 0.4s ease; 
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-signup {
+  background: linear-gradient(145deg, #333333, #1a1a1a);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.btn-signup:hover {
+  color: black; 
+  background: #FFD700;
+
+}
+
+.navbar-links a:hover {
+  transform: translateY(-3px); 
+}
+
+.navbar-links a:active {
+  transform: translateY(1px); 
+}
