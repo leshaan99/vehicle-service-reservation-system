@@ -12,14 +12,6 @@ This is a secure web application designed for vehicle service reservations. The 
   - Delete upcoming reservations.
 - **Secure Access Control**: Ensures users can only access and modify their own reservation information.
 
-## Technology Stack
-
-- **Frontend**: React.js
-- **Backend**: Node.js with Express
-- **Database**: MongoDB (or MySQL if preferred)
-- **Authentication**: OIDC (using [Your Chosen IDP, e.g., Auth0])
-- **Deployment**: Docker
-
 ## Security Considerations
 
 This application has been developed with a strong focus on security, implementing measures to prevent common vulnerabilities, including SQL Injection, XSS, CSRF, and authentication bypass.
