@@ -10,21 +10,22 @@ import java.util.List;
 @Service
 public class ReservationService {
 
+    private final ReservationRepository reservationRepository;
+
     @Autowired
-    private ReservationRepository reservationRepository;
+    public ReservationService(ReservationRepository reservationRepository) {
+        this.reservationRepository = reservationRepository;
+    }
 
     public List<Reservation> findByUsername(String username) {
-        // Fetch all reservations for a specific user
         return reservationRepository.findByUsername(username);
     }
 
     public Reservation save(Reservation reservation) {
-        // Save a new reservation to the database
         return reservationRepository.save(reservation);
     }
 
     public void deleteByIdAndUsername(int id, String username) {
-        // Ensure the reservation belongs to the authenticated user before deleting
         reservationRepository.deleteByIdAndUsername(id, username);
     }
 }
