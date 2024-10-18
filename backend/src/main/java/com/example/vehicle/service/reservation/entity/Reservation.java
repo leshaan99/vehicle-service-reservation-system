@@ -13,12 +13,25 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookingId;
 
+    @Column(nullable = false)
     private String username;
+
+    @Column(nullable = false)
     private Date date;
+
+    @Column(nullable = false)
     private Time time;
+
+    @Column(nullable = false)
     private String location;
+
+    @Column(nullable = false)
     private String vehicleNo;
+
+    @Column(nullable = false)
     private int mileage;
+
+    @Column(columnDefinition = "TEXT")
     private String message;
 }
 
