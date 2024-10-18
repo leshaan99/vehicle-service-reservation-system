@@ -14,13 +14,13 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/", "/login", "/error").permitAll() // Allow public access to these paths
-                        .anyRequest().authenticated() // Require authentication for all other requests
+                        .requestMatchers("/", "/login", "/error").permitAll()
+                        .anyRequest().authenticated()
                 )
-                .oauth2Login(oauth2 -> oauth2 // Configure OIDC login
-                        .loginPage("/login") // Optional: customize login page
-                        .defaultSuccessUrl("/") // Redirect to home page after login
-                        .failureUrl("/login?error=true") // Redirect to login page on failure
+                .oauth2Login(oauth2 -> oauth2
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/")
+                        .failureUrl("/login?error=true")
                 );
 
         return http.build();
