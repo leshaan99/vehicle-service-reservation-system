@@ -1,7 +1,7 @@
 package com.example.vehicle.service.reservation.controller;
 
 import com.example.vehicle.service.reservation.entity.Reservation;
-import com.example.vehiclereservation.service.ReservationService;
+import com.example.vehicle.service.reservation.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,6 @@ public class ReservationController {
 
     @GetMapping
     public List<Reservation> getAllReservations(Principal principal) {
-        // Fetch all reservations of the authenticated user
         return reservationService.findByUsername(principal.getName());
     }
 

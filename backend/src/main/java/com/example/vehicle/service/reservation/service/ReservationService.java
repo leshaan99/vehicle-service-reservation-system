@@ -1,7 +1,7 @@
 package com.example.vehicle.service.reservation.service;
 
 import com.example.vehicle.service.reservation.entity.Reservation;
-import com.example.vehiclereservation.repository.ReservationRepository;
+import com.example.vehicle.service.reservation.repository.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
