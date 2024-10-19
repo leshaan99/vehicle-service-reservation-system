@@ -1,14 +1,11 @@
 package com.example.vehicle.service.reservation.repository;
 
-import com.example.vehicle.service.reservation.entity.Reservation;
+import com.example.vehicle.service.reservation.model.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
-public interface ReservationRepository extends JpaRepository<Reservation, Integer> {
+public interface ReservationRepository extends JpaRepository<Reservation, Long> {
     List<Reservation> findByUsername(String username);
-
-    void deleteByIdAndUsername(int id, String username);
 }
+
