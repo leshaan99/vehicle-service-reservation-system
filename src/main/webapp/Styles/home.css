@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+.home_container{
+	height:90vh;
+	display:flex;
+	flex-direction: row;
+	width:100%;
+}
+
+.homebg{
+	margin-top:5%;
+}
+
+.home_text{
+	margin-left:15%;
+	margin-top:15%;
+	align-items: center;
+	justify-content: center;
+	width:50%;
+}
+
+.home_text h1{
+	font-size: 60px;
+}
+
+.home_text h3{
+	font-size: 30px;
+	line-height: 0%;
+	padding-bottom: 0.2rem;
+}
+
+.home_text p{
+	font-size:25px;
+	
+}
+
+.home_text span{
+	font-size: 4em;
+	color: lightcoral;
+	font-weight: 400;
+}

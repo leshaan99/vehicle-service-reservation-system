@@ -1,0 +1,72 @@
+@charset "ISO-8859-1";
+
+.reservation_form {
+	align-items: center;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top:10%;
+  	 /* Add this line */
+}
+
+.res {
+	  background-color:black;/* Green background color */
+	  color: white;
+	  padding: 15px 20px;
+	  border: none;
+	  border-radius: 15px;
+	  cursor: pointer;
+	  font-size: 17px;
+}
+
+.past_reservation h1,
+.future_reservation h1 {
+	  font-size: 40px;
+	  margin-bottom: 0%;
+}
+
+.past_reservation hr,
+.future_reservation hr {
+	  margin-bottom: 2rem;
+	  width: 100%;
+}
+
+table {
+	  border-collapse: collapse;
+	  width: 100%;
+}
+
+th {
+	  border: 1px solid grey;
+	  padding: 10px;
+}
+
+th {
+	  padding-top: 12px;
+	  padding-bottom: 12px;
+	  text-align: center;
+	  background-color:lightcoral;
+	  color: whitesmoke;
+}
+
+tr{
+		background-color: linen;
+}
+
+.delete {
+	  background-color: red;
+	  color: white;
+	  padding: 14px 18px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	  opacity: 0.9;
+	  border-radius: 25px;
+}
+
+.delete:hover {
+	  opacity: 1;
+	  background-color: black;
+}
