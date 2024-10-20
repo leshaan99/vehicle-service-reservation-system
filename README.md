@@ -9,6 +9,7 @@ FixMyRide is a robust vehicle reservation web application built using JSP, desig
 
 For more insights into the design and development process, check out my detailed blog article,
 
+**[FixMyRide — A Secure Vehicle Reservation App Powered by Asgardeo](https://medium.com/@leshaan99/fixmyride-a-secure-vehicle-reservation-app-powered-by-asgardeo-2c53c5fa8fee)**
 
 
 ## Learn More
