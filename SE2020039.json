@@ -4,7 +4,6 @@
     "app-url": "http://localhost:8080",
     "git": "https://github.com/leshaan99/vehicle-service-reservation-system",
     "blog": [
-        "https://medium.com/@username/blog-title",
-        "https://medium.com/@username/blog-title2"
+        "https://medium.com/@leshaan99/fixmyride-a-secure-vehicle-reservation-app-powered-by-asgardeo-2c53c5fa8fee"
     ]
 }
